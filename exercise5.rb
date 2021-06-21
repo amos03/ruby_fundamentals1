@@ -14,6 +14,8 @@ elsif user_response =="r"
     total_distance = total_distance + 5
     puts "Distance from home is #{total_distance}"
 elsif user_response == "go home"
+    else 
+        puts "I did not recognize that command. Please try again."
 end
 
 end
