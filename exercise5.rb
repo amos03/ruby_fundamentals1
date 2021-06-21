@@ -29,6 +29,8 @@ elsif user_response =="r"
         if outofenergy_prompt=="y" || outofenergy_prompt=="yes"
             energy = energy + 1
             puts "Your energy level has been restored to #{energy}."
+        else
+            puts "You are out of energy and cannot keep walking or running. Wait for help to arrive."
         end
     end
     
