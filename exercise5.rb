@@ -11,10 +11,12 @@ user_response = gets.chomp
 if user_response == "w"
     total_distance = total_distance + 1
     puts "Distance from home is #{total_distance}"
+    energy = energy + 1
 elsif user_response =="r"
     total_distance = total_distance + 5
     puts "Distance from home is #{total_distance}"
-elsif user_response == "go home"
+    energy = energy - 1
+elsif user_response == "go home" || energy == 0
     else 
         puts "I did not recognize that command. Please try again."
 end
